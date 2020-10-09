@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test Rorschach</title>
+</head>
+
+<body>
+	<header>
+		<h1>Тест Роршаха</h1>
+		<nav>
+			<strong><a href="index.html">Back to serials</a></strong>
+		</nav>
+	</header>
+	<main>
+		<form action="https://formspree.io/f/mqkgewpb" method="POST">
+			<br>
+			<label>
+                First Name:
+               <input type="text" placeholder="FName" required name="fname">  
+            </label>
+			<br>
+			<label>
+                Last Name:
+               <input type="text" placeholder="LName" required name="lname">  
+            </label>
+			<br>
+			<label>
+                Email:
+               <input type="email" placeholder="Email" required name="email">  
+            </label>
+			<br>
+			<br>
+            Gender:
+			<label>
+                 <input type="radio" name="gender" value="male">Male
+            </label>
+			<label>
+                <input type="radio" name="gender" value="female">Female
+            </label>
+			<label>
+                <input type="radio" name="gender" value="other">Other
+            </label>
+			<br>
+			<article>
+				<h2>Подивіться на картинку. Після того, як у вас сформувався повний образ асоціації, дайте відповідь на
+					кілька питань.</h2>
+				<img src="img/spot1.jpg" alt="spot" width="300px">
+
+				<ol>
+					<li> Що ви бачите?
+						<br>
+						<label>
+                    <input type="radio" name="class" value="animal">Тварина
+                </label>
+						<br>
+						<label>
+                    <input type="radio" name="class" value="fantastic">Щось фантастичне
+                </label>
+						<br>
+						<label>
+                    <input type="radio" name="class" value="human">Людина
+                </label>
+						<br>
+						<label>
+                    <input type="radio">
+               Інше <input type="text" placeholder="Опишіть що ви бачите" >
+                </label>
+						<br>
+               </li>
+
+					<li> Те що ви бачили було в русі?
+						<br>
+						<label>
+                        <input type="radio" name="choice" value="Yes">Так
+                       </label>
+						<br>
+						<label>
+                        <input type="radio" name="choice" value="No">Ні
+                       </label>
+						<br>
+                   </li>
+				</ol>
+				<img src="img/spot2.jpg" alt="spot" width="300px">
+				<ol>
+					<li value="3">Що ви бачите?
+						<br>
+						<label>
+                        <input type="radio" name="class" value="animal">Тварина
+                    </label>
+						<br>
+						<label>
+                        <input type="radio" name="class" value="fantastic">Щось фантастичне
+                    </label>
+						<br>
+						<label>
+                        <input type="radio" name="class" value="human">Людина
+                    </label>
+						<br>
+						<label>
+                        <input type="radio">
+                   Інше <input type="text" placeholder="Опишіть що ви бачите" >
+                    </label>
+						<br>
+                </li>
+
+					<li>Ваша асоціація стосується:
+						<br>
+						<label>
+                        <input type="radio" name="choice" value="Yes">Картини в цілому
+                       </label>
+						<br>
+						<label>
+                        <input type="radio" name="choice" value="No">Її частини
+                       </label>
+						<br>
+						<hr>
+						<label>
+                      <input type="checkbox"  name="accept" value="accept" required name="accept">  Згода на обробку даних
+                       </label>
+						<br>
+                </li>
+				</ol>
+			</article>
+			<hr>
+			<aside>
+				<h3>Final</h3>
+
+				<label for="card">
+                      Card type:
+                      </label>
+				<select name="usercard">
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">Mastercard</option>
+                        <option value="webmoney">Webmoney</option>
+                      </select>
+				<br>
+				<label for="number">
+                          Card number:
+                        </label>
+				<input type="tel"  name="cardnumber" required name="cardnumber">
+				<br>
+				<label for="date">
+                          Expiration date:
+                        </label>
+				<input type="date"  name="expiration" required name="expiration">
+				<br>
+				<br>
+				<button type="submit">Result</button>
+			</aside>
+			<hr>
+		</form>
+	</main>
+</body>
+
+</html>
